@@ -1,0 +1,36 @@
+.banner{
+    background-image: url(/src/Pages/Images/photo-1595950653106-6c9ebd614d3a\ -\ Copy.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -285px;
+}
+.button, .button a {
+    color: white;
+    text-decoration: none;
+}
+.button {
+    border: 2px solid rgb(20, 20, 20);
+    background: transparent;
+    font-size: 30px;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+    background-color: black;
+
+}
+.hover:hover {
+    color:black;
+  }
+.button:hover {
+    background-color:white;
+    
+  }
+.size{
+/*  
+    text-align: left;
+    margin-left: 750px; */
+    margin-top: 300px;
+}

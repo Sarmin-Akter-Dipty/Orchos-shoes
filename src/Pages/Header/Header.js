@@ -1,33 +1,38 @@
-import { faAddressBook, faBlog, faHome, faTasks } from '@fortawesome/free-solid-svg-icons';
+import { faAddressBook, faBlog, faHome, faShoppingBag, faShoppingBasket, faSign, faSignInAlt, faSignOutAlt, faTasks } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Container, Nav, Navbar, NavLink } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import useAuth from '../hooks/UseAuth';
 import './Header.css'
+import logo from '../Images/images-removebg-preview.png'
 
 const Header = () => {
+    const { user, logOut } = useAuth();
+
+
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" className=" bg-color sticky-top">
+            <Navbar collapseOnSelect expand="lg" className="sticky-top">
                 <Container>
 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav
-                            className="me-auto">
-                            <h2>Orchos</h2>
-
-
-
+                            className=" me-auto">
+                            <div className='d-flex align-items-center logo-header'>
+                                <img className='logo' src={logo} alt="" />
+                                <h2 className='header'>Orchos</h2>
+                            </div>
                         </Nav>
                         <Nav>
-                            <NavLink to='/home' className="items"><FontAwesomeIcon icon={faHome} />Home</NavLink>
-                            <NavLink to='/home' className="items"><FontAwesomeIcon icon={faTasks} />Home</NavLink>
-                            <NavLink to="/explore" className="items"><FontAwesomeIcon icon={faAddressBook} />Explore</NavLink>
-                            <NavLink to="/dashboard" className="items"><FontAwesomeIcon icon={faBlog} />DashBoard</NavLink>
-                            {/* {user?.email ? <button onClick={logOut} className="px-4 items button-hover">Log Out</button> : <NavLink to="/login" className="items">Log In</NavLink>} */}
-                            {/* <NavLink eventKey={2} to="/login" className="items">
-                    <FontAwesomeIcon icon={faSign} />Login
-                </NavLink> */}
+                            <Link to='/home' className="items"><FontAwesomeIcon icon={faHome} />Home</Link>
+                            <Link to='/moreitems' className="items"><FontAwesomeIcon icon={faShoppingBasket} />  Shoes</Link>
+
+                            <Link to="/dashboard" className="items"><FontAwesomeIcon icon={faShoppingBag} />DashBoard</Link>
+                            <h6 className="items">{user?.displayName}</h6>
+                            {user?.email ? <a onClick={logOut} className="items"><FontAwesomeIcon icon={faSignInAlt} />Log Out</a> : <Link to="/login" className="items"><FontAwesomeIcon icon={faSignInAlt} />Log In</Link>}
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

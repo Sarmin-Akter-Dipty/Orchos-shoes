@@ -1,0 +1,68 @@
+.card{
+    
+    width: 15rem;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+    
+    
+   
+    
+}
+.card:hover{
+box-shadow: 5px 10px 25px 5px #f89dac!important;
+}
+.card-body{
+    padding: 1rem 0!important;
+}
+/* .overflow{
+    overflow: hidden;
+} */
+.card-img-top{
+   
+    
+    height: 200px;
+    transform: scale(1);
+    transition: .7s ease;
+}
+.card-img-top:hover{
+    
+}
+
+.hover:hover{
+ 
+    color:  #f89dac;
+    }
+.button-hover{
+   
+    background-color: #000;
+    border: 3px solid #000;
+    color: rgb(250, 249, 244);
+}
+.button-hover:hover{
+   
+    background-color:  #f89dac;
+    color: rgb(15, 15, 15);
+    border: 3px solid white;
+}
+.card-title{
+    color: #424242;
+    font-weight: 700;
+}
+.price{
+    color: #757575;
+    font-weight: 900;
+}
+.cart{
+    color: #212529;
+}
+.cart:hover{
+    color:  #f89dac;
+}
+.shoes-size{
+    font-weight: 650;
+    font-size: 50px;
+    color: #212529;
+}
+.shadow-color{
+    box-shadow: 5px 5px 10px 5px  #f89dac!important;
+}

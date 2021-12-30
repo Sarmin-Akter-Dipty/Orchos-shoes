@@ -1,0 +1,33 @@
+.review-bg{
+    background-color:#faeaec;
+  
+    
+}
+.spacing{
+    font-size: 15px;
+    font-weight: 300;
+   
+
+   
+}
+.rating-size {
+    font-size: 27px;
+    margin-left: 40px;
+    margin-bottom: -2px;
+}
+.cart-1{
+    height: 150px;
+    width: 400px;
+    /* background-color: #eaedfd; */
+    box-shadow: 5px 10px 20px 5px #f89dac!important;
+    
+}
+.cart-1:hover{
+    box-shadow: 5px 10px 20px 5px #969FE4!important;
+}
+.line{
+    border-top: 1px solid #f89dac;
+    margin-bottom: 10px;
+    margin-top: 20px;
+   
+}

@@ -1,4 +1,4 @@
-import { faAddressBook, faBlog, faHome, faShoppingBag, faShoppingBasket, faSign, faSignInAlt, faSignOutAlt, faTasks } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faShoppingBag, faShoppingBasket, faSignInAlt, } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';

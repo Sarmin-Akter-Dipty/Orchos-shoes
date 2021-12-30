@@ -25,7 +25,8 @@ const DashBoard = () => {
 
                     {user?.email && !admin && <Link to="/addReview" className="item">Add Reviews</Link>}
 
-
+                    <br />
+                    <br />
 
                     {user?.email && !admin && <button onClick={logOut} className=" button-hover px-3 py-1 border-3 my-5 mx-2">Log Out</button>}
 

@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import useAuth from '../hooks/UseAuth';
 
-const CheckOutForm = (props) => {
-    const { Price, Name, _id } = props.item;
+const CheckOutForm = ({ item }) => {
 
+    const { price, Name, _id } = item;
     const stripe = useStripe();
     const elements = useElements();
     const { user } = useAuth();
@@ -17,17 +17,19 @@ const CheckOutForm = (props) => {
     const [clientSecret, setClientSecret] = useState('');
 
 
+
     useEffect(() => {
+        console.log(price);
         fetch('https://guarded-hollows-10876.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify({ Price })
+            body: JSON.stringify({ price: price })
         })
             .then(res => res.json())
             .then(data => setClientSecret(data.clientSecret));
-    }, []);
+    }, [price]);
 
 
     const handleSubmit = async (e) => {
@@ -121,7 +123,7 @@ const CheckOutForm = (props) => {
                     }}
                 />
                 {processing ? <Spinner /> : <button type="submit" disabled={!stripe || success}>
-                    Pay ${Price}
+                    Pay ${price}
                 </button>}
 
             </form>

@@ -61,12 +61,12 @@ const MyOrder = (item) => {
                                 <div className="overflow">
                                     <img src={order?.item.img} alt="" className='card-img-top' data-aos="zoom-in" data-aos-duration="2000" />
                                     <h5 className="card-title hover">{order.item.Name}</h5>
-                                    <h5 className="price">{order.item.Price}</h5>
+                                    <h5 className="price">{order.item.price}</h5>
                                     <h4>Status: <span className="text-primary">{order.status}</span></h4>
                                     <button className="button-hover px-2 py-0 my-4 mx-2" onClick={() => handleDelete(order._id)}>Delete</button>
                                     {order?.item.payment?.last4 ? 'paid' : <Link to={`/dashboard/payment/${order?._id}`}><button
 
-                                        className="button-hover px-2 py-0 my-4 mx-2">Pay $ {order.item.Price}</button></Link>}
+                                        className="button-hover px-2 py-0 my-4 mx-2">Pay $ {order.item.price}</button></Link>}
                                 </div>
 
                             </div>

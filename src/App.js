@@ -17,6 +17,8 @@ import ManageAllOrders from './Pages/Admin/ManageAllOrders/ManageAllOrders';
 import ManageProducts from './Pages/Admin/ManageProducts/ManageProducts';
 import AddReview from './Pages/Reveiw/AddReview';
 import Payment from './Pages/Payment/Payment';
+import NotFound from './Pages/NotFound/NotFound';
+import About from './Pages/About/About';
 
 function App() {
   return (
@@ -69,6 +71,11 @@ function App() {
             <Route path="/addReview" element={<PrivateRoute>
               <AddReview />
             </PrivateRoute>}></Route>
+
+            <Route path="/about" element={<About />}>
+            </Route>
+            <Route path="*" element={<NotFound />}>
+            </Route>
           </Routes>
 
         </Router>

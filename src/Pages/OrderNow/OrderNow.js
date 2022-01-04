@@ -48,7 +48,7 @@ const OrderNow = () => {
                             <h5 className="card-title hover">{item?.Name}</h5>
 
                             <p className='p-size-0'>{item?.Description}</p>
-                            <h5 className='price'>{item?.Price}</h5>
+                            <h5 className='price'>{item?.price}</h5>
                         </div>
 
 

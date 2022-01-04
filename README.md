@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# niche-website-client-side-rased100
+# Orchos Shoes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site: https://orchos-shoes-320b7.web.app/
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+- This website about Shoes.My- design and website idea is unique.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- This website made with React, React Router-dom version-6,Bootstrap, Javascript, Firebase, heroku.
+- Fullstack niche-related website. Users can log in by creating a new account. 
+Users can purchase a product & cancel an order & add a review. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Users can see there individual orders.
 
-### `npm test`
+- User can buy there choice shoes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Have Admin and User dashboard. Admin can delete, add, manage the services, and can  make a user admin. 
+- Admin with the email address: aa@aa.com with password: 123456
+- adding review, i  add an input field to add ratings (a number between 0-5). Based on the rating, display rating star on each reviews in the home page
+- Make the website responsive. Make sure the site looks different on desktop and mobile responsive & Tablet responsive
+- On the Manage All Orders page for the admin, the logged in admin will see the orders placed by every user. 
+- If multiple users used this website to place orders, everyone's order will be displayed here. 
+- Admin can update the status of the order. At the time of placing an order, every order will have a default status: pending. On the Manage All Orders page, an admin will be able to update the status of the pending to shipped status. This could be a simple button to update the pending status.
+- The admin will be able to delete anyone's order here. Make sure to add a confirmation before deleting.
+- payment gateway (SSL and STRIPE)
+- Tools: React.js,Bootstrap,Express.js,Private route,Firebase Authentication,MongoDB.
+#   o r c h o s - s h o s 

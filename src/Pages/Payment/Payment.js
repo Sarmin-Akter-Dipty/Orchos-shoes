@@ -8,7 +8,7 @@ const stripePromise = loadStripe('pk_test_51JwpU3Hb4iT0JD8GBxxDRBiwfIoS1BpttzaRb
 
 const Payment = () => {
     const { itemId } = useParams()
-    const [items, setItems] = useState({ item: { Name: '', Price: '' } })
+    const [items, setItems] = useState({ item: { Name: '', price: '' } })
     useEffect(() => {
         fetch(`https://guarded-hollows-10876.herokuapp.com/myorders/${itemId}`)
 
@@ -18,14 +18,14 @@ const Payment = () => {
                 setItems(data)
             })
     }, [itemId])
-    // console.log(items.item.Price);
+    console.log(items);
     return (
         <>
             {items && <div>
 
                 <h3>Pay for:{items.item.Name}</h3>
-                <h4>Pay:${items?.item.Price}</h4>
-                {items?.item.Price && <Elements stripe={stripePromise}>
+                <h4>Pay:${items.item.price}</h4>
+                {items.item.price && <Elements stripe={stripePromise}>
                     <CheckOutForm item={items} />
                 </Elements>}
             </div>}

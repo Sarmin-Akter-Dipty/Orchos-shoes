@@ -1,4 +1,4 @@
-import { faHome, faShoppingBag, faShoppingBasket, faSignInAlt, } from '@fortawesome/free-solid-svg-icons';
+import { faAddressBook, faHome, faShoppingBag, faShoppingBasket, faSignInAlt, } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
@@ -29,9 +29,11 @@ const Header = () => {
                             <Link to='/home' className="items"><FontAwesomeIcon icon={faHome} />Home</Link>
                             <Link to='/moreitems' className="items"><FontAwesomeIcon icon={faShoppingBasket} />  Shoes</Link>
 
+                            <Link to="/about" className="items"><FontAwesomeIcon icon={faAddressBook} />About</Link>
                             <Link to="/dashboard" className="items"><FontAwesomeIcon icon={faShoppingBag} />DashBoard</Link>
                             <h6 className="items">{user?.displayName}</h6>
                             {user?.email ? <a onClick={logOut} className="items"><FontAwesomeIcon icon={faSignInAlt} />Log Out</a> : <Link to="/login" className="items"><FontAwesomeIcon icon={faSignInAlt} />Log In</Link>}
+
 
                         </Nav>
                     </Navbar.Collapse>

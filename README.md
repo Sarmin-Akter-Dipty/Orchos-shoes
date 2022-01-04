@@ -1,4 +1,3 @@
-# niche-website-client-side-rased100
 # Orchos Shoes
 
 Live site: https://orchos-shoes-320b7.web.app/
